@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/expressao"
+        android:id="@+id/expression"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:ellipsize="start"
@@ -21,13 +21,13 @@
         tools:ignore="RtlSymmetry" />
 
     <TextView
-        android:id="@+id/resultado"
+        android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:gravity="end"
         android:maxLines="1"
         android:paddingEnd="10dp"
-        android:text="123"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="30sp"
         tools:ignore="RtlSymmetry" />
@@ -42,10 +42,7 @@
             android:id="@+id/btn_clear"
             style="@style/Operators_Button"
             android:text="@string/clear" />
-        <TextView
-            android:id="@+id/btn_percent"
-            style="@style/Operators_Button"
-            android:text="@string/percent" />
+
         <TextView
             android:id="@+id/btn_division"
             style="@style/Operators_Button"
