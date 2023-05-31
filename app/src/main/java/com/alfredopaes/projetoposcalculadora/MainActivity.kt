@@ -3,6 +3,7 @@ package com.alfredopaes.projetoposcalculadora
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.WindowManager
 import com.alfredopaes.projetoposcalculadora.databinding.ActivityMainBinding
 import net.objecthunter.exp4j.ExpressionBuilder
 import java.lang.Exception
@@ -11,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         super.onCreate(savedInstanceState)
@@ -84,7 +87,7 @@ class MainActivity : AppCompatActivity() {
             addExpression("-", false)
         }
         btnMultiplication.setOnClickListener {
-            addExpression("x", false)
+            addExpression("*", false)
         }
         btnDivision.setOnClickListener {
             addExpression("/", false)
